@@ -1,0 +1,92 @@
+<html>
+	<head>
+	<title>Clock it! A javascript analog clock</title>
+	<style>
+		.clock-face{
+			height: 200px;
+			width: 200px;
+			position: relative;
+			border: 8px solid white;
+			border-radius: 50%;
+			margin: 0 auto;
+			margin-top: 50px;
+			box-shadow: 0 1px 20px rgba(34,34,34,0.3),inset 0 1px 10px rgba(34,34,34,0.3);
+		}
+		.hand{
+			position: absolute;
+			height: 0;
+			width: 0;
+			top: 50%;
+			left: 50%;
+			background-color: #fff;
+			transform-origin: 100% 50%;
+		}
+		.hour-hand{
+			margin: -1px 0 -1px -25%;
+			padding: 4px 0 4px 25%;
+			border-radius: 4px 0 0 4px;
+		}
+		.minute-hand{
+			margin: -1px 0 -1px -35%;
+			padding: 3px 0 3px 35%;
+			border-radius: 3px 0 0 3px;
+		}
+		.second-hand{
+			margin: -1px 0 -1px -40%;
+			padding: 1px 0 1px 40%;
+			border-radius: 1px 0 0 1px;
+		}
+		.central-circle{
+			position: absolute;
+			border: 7px solid white;
+			border-radius: 7px;
+			top: 48%;
+			left: 46%;
+		}
+		.hands-div{
+			width: 100%;
+			height: 100%;
+		}
+		body{
+			background-color: #e67e22;
+		}
+		.title{
+			text-align: center;
+			font-family: "Comic Sans MS";
+			color: #fff;
+		}
+		.number{
+			font-family: "Comic Sans MS";
+			color: #fff;
+			position: absolute;
+		}
+	</style>
+	<script src="jsClock.js"></script>
+	</head>
+	<body>
+		<div class="clock-face">
+			<div class="hands-div">
+				<div id="hh" class="hour-hand hand"></div>
+				<div id="mh" class="minute-hand hand"></div>
+				<div id="sh" class="second-hand hand"></div>
+				<div class="central-circle"></div>
+				<div class="number" style="left: 48%;top: 1%;">12</div>
+				<div class="number" style="left: 70%;top: 5%;">1</div>
+				<div class="number" style="left: 86%;top: 22%;">2</div>
+				<div class="number" style="left: 92%;top: 44%;">3</div>
+				<div class="number" style="left: 86%;top: 68%;">4</div>
+				<div class="number" style="left: 70%;top: 84%;">5</div>
+				<div class="number" style="left: 48%;top: 88%;">6</div>
+				<div class="number" style="left: 25%;top: 84%;">7</div>
+				<div class="number" style="left: 9%;top: 67%;">8</div>
+				<div class="number" style="left: 2%;top: 44%;">9</div>
+				<div class="number" style="left: 7%;top: 22%;">10</div>
+				<div class="number" style="left: 24%;top: 5%;">11</div>
+			</div>
+		</div>
+		<div>
+			<h1 class="title">Clock it!</h1>
+			<h2 class="title">- A javascript analog clock</h2>
+		</div>
+	</body>
+</html>
