@@ -49,16 +49,17 @@
 		}
 		body{
 			background-color: #4183D7;
+			font-family: "Comic Sans MS";
+			color: #fff;
 		}
 		.title{
 			text-align: center;
-			font-family: "Comic Sans MS";
-			color: #fff;
 		}
 		.number{
-			font-family: "Comic Sans MS";
-			color: #fff;
 			position: absolute;
+		}
+		.changeColor{
+			text-align: center;
 		}
 	</style>
 	<script src="jsClock.js"></script>
@@ -87,6 +88,19 @@
 		<div>
 			<h1 class="title">Clock it!</h1>
 			<h2 class="title">- A javascript analog clock</h2>
+			<div class="changeColor">
+				<p>Change color</p>
+				<select onChange="changeBackgroundColor()" id="changeBackColor">
+					<option>Blue</option>
+					<option>Red</option>
+					<option>Orange</option>
+					<option>Green</option>
+					<option>Yellow</option>
+					<option>Silver</option>
+					<option>Purple</option>
+					<option>Pink</option>
+				</select>
+			</div>
 		</div>
 	</body>
 </html>

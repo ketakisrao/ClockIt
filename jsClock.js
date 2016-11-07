@@ -15,3 +15,33 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		setTimeout(updateTime, 1000);
 	}
 });
+
+function changeBackgroundColor(){
+	var selectedColor = document.getElementById("changeBackColor").value;
+	switch(selectedColor){
+		case "Blue":
+			document.body.style.backgroundColor = "#4183D7";
+			break;
+		case "Orange":
+			document.body.style.backgroundColor = "#e67e22";
+			break;
+		case "Red":
+			document.body.style.backgroundColor = "#e74c3c";
+			break;
+		case "Green":
+			document.body.style.backgroundColor = "#2ecc71";
+			break;
+		case "Yellow":
+			document.body.style.backgroundColor = "#f1c40f";
+			break;
+		case "Silver":
+			document.body.style.backgroundColor = "#bdc3c7";
+			break;
+		case "Purple":
+			document.body.style.backgroundColor = "#BF55EC";
+			break;
+		case "Pink":
+			document.body.style.backgroundColor = "#F62459";
+			break;
+	}
+}
