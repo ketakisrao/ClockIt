@@ -28,8 +28,8 @@ function changeBackgroundColor(){
 		case "Red":
 			document.body.style.backgroundColor = "#e74c3c";
 			break;
-		case "Green":
-			document.body.style.backgroundColor = "#2ecc71";
+		case "Teal":
+			document.body.style.backgroundColor = "#008080";
 			break;
 		case "Yellow":
 			document.body.style.backgroundColor = "#f1c40f";
